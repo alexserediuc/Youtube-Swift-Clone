@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA6AC62B2710639000AE1818 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AC62A2710639000AE1818 /* VideoViewController.swift */; };
+		FA6AC63027107A7200AE1818 /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AC62F27107A7200AE1818 /* VideoLauncher.swift */; };
 		FAC7D65D270F17BB0086FF91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7D65C270F17BB0086FF91 /* AppDelegate.swift */; };
 		FAC7D65F270F17BB0086FF91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7D65E270F17BB0086FF91 /* SceneDelegate.swift */; };
-		FAC7D661270F17BB0086FF91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7D660270F17BB0086FF91 /* ViewController.swift */; };
+		FAC7D661270F17BB0086FF91 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7D660270F17BB0086FF91 /* MainViewController.swift */; };
 		FAC7D664270F17BB0086FF91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC7D662270F17BB0086FF91 /* Main.storyboard */; };
 		FAC7D666270F17BD0086FF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC7D665270F17BD0086FF91 /* Assets.xcassets */; };
 		FAC7D669270F17BD0086FF91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC7D667270F17BD0086FF91 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA6AC62A2710639000AE1818 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		FA6AC62F27107A7200AE1818 /* VideoLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLauncher.swift; sourceTree = "<group>"; };
 		FAC7D659270F17BB0086FF91 /* Youtube Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youtube Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC7D65C270F17BB0086FF91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC7D65E270F17BB0086FF91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAC7D660270F17BB0086FF91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAC7D660270F17BB0086FF91 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FAC7D663270F17BB0086FF91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAC7D665270F17BD0086FF91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC7D668270F17BD0086FF91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				FAC7D65C270F17BB0086FF91 /* AppDelegate.swift */,
 				FAC7D65E270F17BB0086FF91 /* SceneDelegate.swift */,
-				FAC7D660270F17BB0086FF91 /* ViewController.swift */,
+				FAC7D660270F17BB0086FF91 /* MainViewController.swift */,
+				FA6AC62A2710639000AE1818 /* VideoViewController.swift */,
+				FA6AC62F27107A7200AE1818 /* VideoLauncher.swift */,
 				FAC7D662270F17BB0086FF91 /* Main.storyboard */,
 				FAC7D665270F17BD0086FF91 /* Assets.xcassets */,
 				FAC7D667270F17BD0086FF91 /* LaunchScreen.storyboard */,
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC7D661270F17BB0086FF91 /* ViewController.swift in Sources */,
+				FAC7D661270F17BB0086FF91 /* MainViewController.swift in Sources */,
 				FAC7D65D270F17BB0086FF91 /* AppDelegate.swift in Sources */,
+				FA6AC63027107A7200AE1818 /* VideoLauncher.swift in Sources */,
+				FA6AC62B2710639000AE1818 /* VideoViewController.swift in Sources */,
 				FAC7D65F270F17BB0086FF91 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
