@@ -234,7 +234,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Lbz-S4-nP2"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="fill"/>
+                                <state key="normal" title="Button" image="x"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gdD-oD-9zn"/>
@@ -253,13 +253,13 @@
     </scenes>
     <resources>
         <image name="app-logo" width="3840" height="2160"/>
-        <image name="fill" width="128" height="128"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="rectangle.on.rectangle" catalog="system" width="128" height="96"/>
         <image name="thumbnailPlaceholder" width="691" height="388"/>
+        <image name="x" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA6AC62B2710639000AE1818 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AC62A2710639000AE1818 /* VideoViewController.swift */; };
+		FA4E08D827142A030063453F /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E08D727142A030063453F /* VideoPlayerView.swift */; };
 		FA6AC63027107A7200AE1818 /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AC62F27107A7200AE1818 /* VideoLauncher.swift */; };
 		FAC7D65D270F17BB0086FF91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7D65C270F17BB0086FF91 /* AppDelegate.swift */; };
 		FAC7D65F270F17BB0086FF91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7D65E270F17BB0086FF91 /* SceneDelegate.swift */; };
@@ -17,9 +17,20 @@
 		FAC7D669270F17BD0086FF91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC7D667270F17BD0086FF91 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FA99386A271576C9002136D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC7D651270F17BB0086FF91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC7D658270F17BB0086FF91;
+			remoteInfo = "Youtube Clone";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		FA6AC62A2710639000AE1818 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		FA4E08D727142A030063453F /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		FA6AC62F27107A7200AE1818 /* VideoLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLauncher.swift; sourceTree = "<group>"; };
+		FA993865271576C9002136D9 /* Youtube CloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Youtube CloneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC7D659270F17BB0086FF91 /* Youtube Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youtube Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC7D65C270F17BB0086FF91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC7D65E270F17BB0086FF91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +42,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FA993862271576C9002136D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAC7D656270F17BB0086FF91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,6 +59,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA4E08D3271429970063453F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA4E08D4271429A00063453F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E08D727142A030063453F /* VideoPlayerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA4E08D5271429AC0063453F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAC7D660270F17BB0086FF91 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA4E08D6271429E60063453F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA6AC62F27107A7200AE1818 /* VideoLauncher.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FA4E08DB27142A9A0063453F /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				FAC7D65C270F17BB0086FF91 /* AppDelegate.swift */,
+				FAC7D65E270F17BB0086FF91 /* SceneDelegate.swift */,
+				FAC7D662270F17BB0086FF91 /* Main.storyboard */,
+				FAC7D665270F17BD0086FF91 /* Assets.xcassets */,
+				FAC7D667270F17BD0086FF91 /* LaunchScreen.storyboard */,
+				FAC7D66A270F17BD0086FF91 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
 		FAC7D650270F17BB0086FF91 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC7D659270F17BB0086FF91 /* Youtube Clone.app */,
+				FA993865271576C9002136D9 /* Youtube CloneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,15 +123,11 @@
 		FAC7D65B270F17BB0086FF91 /* Youtube Clone */ = {
 			isa = PBXGroup;
 			children = (
-				FAC7D65C270F17BB0086FF91 /* AppDelegate.swift */,
-				FAC7D65E270F17BB0086FF91 /* SceneDelegate.swift */,
-				FAC7D660270F17BB0086FF91 /* MainViewController.swift */,
-				FA6AC62A2710639000AE1818 /* VideoViewController.swift */,
-				FA6AC62F27107A7200AE1818 /* VideoLauncher.swift */,
-				FAC7D662270F17BB0086FF91 /* Main.storyboard */,
-				FAC7D665270F17BD0086FF91 /* Assets.xcassets */,
-				FAC7D667270F17BD0086FF91 /* LaunchScreen.storyboard */,
-				FAC7D66A270F17BD0086FF91 /* Info.plist */,
+				FA4E08D3271429970063453F /* Model */,
+				FA4E08D4271429A00063453F /* View */,
+				FA4E08D5271429AC0063453F /* Controller */,
+				FA4E08D6271429E60063453F /* Helpers */,
+				FA4E08DB27142A9A0063453F /* Supporting */,
 			);
 			path = "Youtube Clone";
 			sourceTree = "<group>";
@@ -76,6 +135,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FA993864271576C9002136D9 /* Youtube CloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA99386E271576C9002136D9 /* Build configuration list for PBXNativeTarget "Youtube CloneTests" */;
+			buildPhases = (
+				FA993861271576C9002136D9 /* Sources */,
+				FA993862271576C9002136D9 /* Frameworks */,
+				FA993863271576C9002136D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA99386B271576C9002136D9 /* PBXTargetDependency */,
+			);
+			name = "Youtube CloneTests";
+			productName = "Youtube CloneTests";
+			productReference = FA993865271576C9002136D9 /* Youtube CloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FAC7D658270F17BB0086FF91 /* Youtube Clone */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC7D66D270F17BD0086FF91 /* Build configuration list for PBXNativeTarget "Youtube Clone" */;
@@ -102,6 +179,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					FA993864271576C9002136D9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FAC7D658270F17BB0086FF91;
+					};
 					FAC7D658270F17BB0086FF91 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -121,11 +202,19 @@
 			projectRoot = "";
 			targets = (
 				FAC7D658270F17BB0086FF91 /* Youtube Clone */,
+				FA993864271576C9002136D9 /* Youtube CloneTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FA993863271576C9002136D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAC7D657270F17BB0086FF91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +228,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FA993861271576C9002136D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAC7D655270F17BB0086FF91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,12 +242,20 @@
 				FAC7D661270F17BB0086FF91 /* MainViewController.swift in Sources */,
 				FAC7D65D270F17BB0086FF91 /* AppDelegate.swift in Sources */,
 				FA6AC63027107A7200AE1818 /* VideoLauncher.swift in Sources */,
-				FA6AC62B2710639000AE1818 /* VideoViewController.swift in Sources */,
 				FAC7D65F270F17BB0086FF91 /* SceneDelegate.swift in Sources */,
+				FA4E08D827142A030063453F /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA99386B271576C9002136D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC7D658270F17BB0086FF91 /* Youtube Clone */;
+			targetProxy = FA99386A271576C9002136D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FAC7D662270F17BB0086FF91 /* Main.storyboard */ = {
@@ -173,6 +277,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FA99386C271576C9002136D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7KGV345WK9;
+				INFOPLIST_FILE = "Youtube CloneTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.serediucalex.Youtube-CloneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Youtube Clone.app/Youtube Clone";
+			};
+			name = Debug;
+		};
+		FA99386D271576C9002136D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7KGV345WK9;
+				INFOPLIST_FILE = "Youtube CloneTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.serediucalex.Youtube-CloneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Youtube Clone.app/Youtube Clone";
+			};
+			name = Release;
+		};
 		FAC7D66B270F17BD0086FF91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -296,7 +440,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7KGV345WK9;
-				INFOPLIST_FILE = "Youtube Clone/Info.plist";
+				INFOPLIST_FILE = "Youtube Clone/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +459,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7KGV345WK9;
-				INFOPLIST_FILE = "Youtube Clone/Info.plist";
+				INFOPLIST_FILE = "Youtube Clone/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +474,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FA99386E271576C9002136D9 /* Build configuration list for PBXNativeTarget "Youtube CloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA99386C271576C9002136D9 /* Debug */,
+				FA99386D271576C9002136D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FAC7D654270F17BB0086FF91 /* Build configuration list for PBXProject "Youtube Clone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
